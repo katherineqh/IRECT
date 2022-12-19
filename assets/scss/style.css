@@ -337,13 +337,13 @@ section {
 #about {
   padding: 60px 100px;
   background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
-  background-repeat: repeat-y;
-  height: 500px;
-  background-size: cover;
+  /* background-repeat: repeat-y;
+  height: 500px; */
+  /* background-size: cover; */
 }
 #about ::before {
   content: "";
-  background-image: url(/assets/img/irectcar2.jpg);
+  /* background-image: url(/assets/img/irectcar2.jpg); */
   background-size: cover;
   position: absolute;
   opacity: 0.8;
