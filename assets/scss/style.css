@@ -209,25 +209,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 640px) {
   #hero #mycarousel img {
-    display: none;
+    /* display: ; */
+    position: absolute;
+    margin: 0 0px;
+     background-size: cover; 
+    
   }
   #hero #mycarousel .carousel-inner .carousel-bg1 {
-    background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img1.png") no-repeat center center;
+    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
     width: 100%;
-    height: 800px;
-    background-size: cover;
+    height: 700px;
+    /* background-size: cover; */
   }
   #hero #mycarousel .carousel-inner .carousel-bg2 {
-    background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img2.png") no-repeat center center;
+    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
     width: 100%;
-    height: 800px;
-    background-size: cover;
+   
+    height: 700px;
+    /* background-size: cover; */
   }
   #hero #mycarousel .carousel-inner .carousel-bg3 {
-    background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img3.png") no-repeat center center;
+    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
     width: 100%;
-    height: 800px;
-    background-size: cover;
+  
+    height: 700px;
+    /* background-size: cover; */
   }
 }
 @media screen and (max-width: 640px) {
@@ -337,13 +343,13 @@ section {
 #about {
   padding: 60px 100px;
   background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
-  /* background-repeat: repeat-y;
-  height: 500px; */
-  /* background-size: cover; */
+  background-repeat: repeat-y;
+  height: 500px;
+  background-size: cover;
 }
 #about ::before {
   content: "";
-  /* background-image: url(/assets/img/irectcar2.jpg); */
+  background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
   background-size: cover;
   position: absolute;
   opacity: 0.8;
@@ -353,55 +359,64 @@ section {
   justify-content: center;
   align-items: center;
   padding: 10px 10px;
-}
-#about .about-container .box {
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: rgba(253, 247, 237, 0.7803921569);
   padding: 20px;
 }
-#about .about-container .text-dark {
+#about .about-container .box {
+  padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0 10px 40px 10px;
+  background-color: #f7f0e5;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+#about .about-container .box:hover {
+  transform: translateY(-5px);
+}
+#about .text-dark {
   text-align: center;
   color: #5E3B26;
   margin: 20px 10px;
   padding: 0 0px;
 }
-#about .about-container .title {
+#about .title {
   color: #5E3B26;
   font-weight: 700;
   font-size: 32px;
 }
-#about .about-container p {
+#about p {
   line-height: 26px;
 }
-#about .about-container p:last-child {
+#about p:last-child {
   margin-bottom: 0;
 }
-#about .about-container .icon-box {
+#about .icon-box {
   background: #fff;
   background-size: cover;
   padding: 0 0 30px 0;
 }
-#about .about-container .icon-box:hover .icon {
+#about .icon-box:hover .icon {
   background: #007bff;
 }
-#about .about-container .icon-box:hover .icon i {
+#about .icon-box:hover .icon i {
   color: #fff;
 }
-#about .about-container .icon-box .title {
+#about .icon-box .title {
   margin-left: 80px;
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 18px;
 }
-#about .about-container .icon-box .title a {
+#about .icon-box .title a {
   color: #283d50;
 }
-#about .about-extra {
+
+.about-extra {
   padding-top: 60px;
 }
-#about .about-extra h5 {
+.about-extra h5 {
   padding: 100px 150px;
   margin: 30px;
   font-weight: 600;
@@ -410,11 +425,15 @@ section {
 
 /* Services Section
 --------------------------------*/
-#services {
+#services, #Kitchen,
+#Wardrobes,
+#ShowerScreens, #about {
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
-#services .box {
+#services .box, #Kitchen .box,
+#Wardrobes .box,
+#ShowerScreens .box, #about .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -424,42 +443,60 @@ section {
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
 }
-#services .box:hover {
+#services .box:hover, #Kitchen .box:hover,
+#Wardrobes .box:hover,
+#ShowerScreens .box:hover, #about .box:hover {
   transform: translateY(-5px);
 }
-#services .icon {
+#services .icon, #Kitchen .icon,
+#Wardrobes .icon,
+#ShowerScreens .icon, #about .icon {
   position: absolute;
   left: -15px;
   top: calc(50% - 32px);
 }
-#services .icon i {
+#services .icon i, #Kitchen .icon i,
+#Wardrobes .icon i,
+#ShowerScreens .icon i, #about .icon i {
   font-size: 64px;
   line-height: 0;
   transition: 0.5s;
 }
-#services .title {
+#services .title, #Kitchen .title,
+#Wardrobes .title,
+#ShowerScreens .title, #about .title {
   margin-left: 40px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 25px;
 }
-#services .title a {
+#services .title a, #Kitchen .title a,
+#Wardrobes .title a,
+#ShowerScreens .title a, #about .title a {
   color: #111;
 }
-#services h4 {
+#services h4, #Kitchen h4,
+#Wardrobes h4,
+#ShowerScreens h4, #about h4 {
   margin-left: 30px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
   text-align: center;
 }
-#services h4 a {
+#services h4 a, #Kitchen h4 a,
+#Wardrobes h4 a,
+#ShowerScreens h4 a, #about h4 a {
   color: #111;
 }
-#services .box:hover .title a {
+#services .box:hover .title a, #Kitchen .box:hover .title a,
+#Wardrobes .box:hover .title a,
+#ShowerScreens .box:hover .title a, #about .box:hover .title a {
   color: #007bff;
 }
-#services .description {
+#services .description, #Kitchen .description,
+#Wardrobes .description,
+#ShowerScreens .description, #about .description {
   font-size: 14px;
   margin-left: 40px;
   line-height: 24px;
@@ -539,8 +576,7 @@ section {
 #Kitchen,
 #Wardrobes,
 #ShowerScreens {
-  padding: 70px 150px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 70px 50px;
 }
 #Kitchen #portfolio-flters,
 #Wardrobes #portfolio-flters,

@@ -97,7 +97,7 @@ section {
 #about {
   
   padding: 60px 100px;
-  background-image: url(/assets/img/irectcar3.jpg);
+  background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
   background-repeat:repeat-y;
   // opacity: 0.5;
   // width: 100%;
@@ -106,7 +106,7 @@ section {
 
   ::before {
     content: "";
-     background-image: url(/assets/img/irectcar2.jpg);
+    background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
     background-size: cover;
     position: absolute;
     opacity: 0.8;
@@ -131,13 +131,25 @@ section {
   // //   transition:0.3s, border-radius 0.3s, opacity 0.3s;
    
   //   }
-  .box {position: relative;
-  width: 100%;
+  .box {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 10px 40px 10px;
+   background-color: #f7f0e5;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
  
-  flex-wrap: wrap;
 
   // align-content: flex-start;
-  background-color: #FDF7EDC7;
+  // background-color: #FDF7EDC7;
 padding: 20px;
   }
 
@@ -201,11 +213,13 @@ text-align: center;
       font-size: 24px;
     }
   }
-}
+
 
 /* Services Section
 --------------------------------*/
-#services {
+#services,#Kitchen,
+#Wardrobes,
+#ShowerScreens,#about{
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
@@ -350,9 +364,9 @@ text-align: center;
 --------------------------------*/
 #Kitchen,
 #Wardrobes,
-#ShowerScreens {
-  padding: 70px 150px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+#ShowerScreens{
+  padding: 70px 50px;
+  // box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 
   #portfolio-flters {
     padding: 0;
