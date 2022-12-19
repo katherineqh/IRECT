@@ -212,19 +212,19 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   #hero #mycarousel .carousel-inner .carousel-bg1 {
-    background: url(/assets/img/hero-img1.png) no-repeat center center;
+    background: url(../assets/img/hero-img1.png) no-repeat center center;
     width: 100%;
     height: 800px;
     background-size: cover;
   }
   #hero #mycarousel .carousel-inner .carousel-bg2 {
-    background: url(/assets/img/hero-img2.png) no-repeat center center;
+    background: url(../assets/img/hero-img2.png) no-repeat center center;
     width: 100%;
     height: 800px;
     background-size: cover;
   }
   #hero #mycarousel .carousel-inner .carousel-bg3 {
-    background: url(/assets/img/hero-img3.png) no-repeat center center;
+    background: url(../assets/img/hero-img3.png) no-repeat center center;
     width: 100%;
     height: 800px;
     background-size: cover;
@@ -336,7 +336,7 @@ section {
 --------------------------------*/
 #about {
   padding: 60px 100px;
-  background-image: url(/assets/img/irectcar3.jpg);
+  background-image: url(../assets/img/irectcar3.jpg);
   background-repeat: repeat-y;
   height: 500px;
   background-size: cover;
