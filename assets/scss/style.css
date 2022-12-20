@@ -205,43 +205,50 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  /* display: block; */
   width: 100%;
+  height: 600px;
 }
-@media screen and (min-width: 640px) {
-  #hero #mycarousel img {
-    /* display: ; */
-    position: absolute;
-    margin: 0 0px;
+#hero img {
 
-
-    
-  }
-  #hero #mycarousel .carousel-inner .carousel-bg1 {
-    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
-    width: 100%;
-    height: 600px;
-    /* background-size: cover; */
-  }
-  #hero #mycarousel .carousel-inner .carousel-bg2 {
-    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
-    width: 100%;
-   
-    height: 600px;
-    /* background-size: cover; */
-  }
-  #hero #mycarousel .carousel-inner .carousel-bg3 {
-    /* background-image: url(/assets/img/hero-img1.png) no-repeat center center; */
-    width: 100%;
+  width: 100%;
   
-    height: 600px;
-    /* background-size: cover; */
-  }
 }
+
 @media screen and (max-width: 640px) {
+  #hero  img {
+    display: block;
+    height: 500px;
+  }
+} 
+/* @media screen and (min-width: 640px) {
+  #hero #mycarousel img {
+    display: flex;
+  } */
+  /* #hero #mycarousel9 .carousel-inner .carousel-bg1 {
+    /* background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img1.png") no-repeat center center; */
+    /* width: 100%;
+    height: 800px; */
+    /* background-size: cover; */
+  /* }  */
+  /* #hero #mycarousel .carousel-inner .carousel-bg2 {
+    /* background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img2.png") no-repeat center center; */
+    /* width: 100%;
+    height: 800px; */
+    /* background-size: cover; */
+  /* } */
+  /* #hero #mycarousel .carousel-inner .carousel-bg3 {
+    /* background: url("https://katherineqh.github.io/IRECT/assets/img/hero-img3.png") no-repeat center center; */
+    /* width: 100%;
+    height: 800px; */ 
+    /* background-size: cover; */
+  /* } */
+/* }  */
+/* @media screen and (max-width: 640px) {
   #hero #mycarousel img {
     display: block;
   }
-}
+} */
 #hero h3 {
   font-family: Montserrat, sans-serif;
   color: #212529;
@@ -249,6 +256,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero p {
   color: #212529;
 }
+
+
+ 
+/* 
+@media screen and (max-width: 640px) {
+  #hero #mycarousel img {
+    display: block;
+  }
+} */
 
 /*--------------------------------------------------------------
 # Sections
@@ -347,13 +363,14 @@ section {
   background-repeat: repeat-y;
   height: 500px;
   background-size: cover;
+  
 }
 #about ::before {
   content: "";
-  background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
+  /* background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg"); */
   background-size: cover;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 #about .about-container {
   display: flex;
@@ -361,17 +378,20 @@ section {
   align-items: center;
   padding: 10px 10px;
   padding: 20px;
+ 
+
 }
+
 #about .about-container .box {
   padding: 30px 20px;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
   margin: 0 10px 40px 10px;
-  background-color: #f7f0e5;
+  background-color: rgb(245, 240, 240) ;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #about .about-container .box:hover {
   transform: translateY(-5px);
@@ -423,6 +443,7 @@ section {
   font-weight: 600;
   font-size: 24px;
 }
+
 
 /* Services Section
 --------------------------------*/
